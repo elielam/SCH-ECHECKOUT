@@ -1,0 +1,10 @@
+c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\e-checkout.exe.config
+c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\e-checkout.exe
+c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\e-checkout.pdb
+c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.csprojResolveAssemblyReference.cache
+c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Properties.Resources.resources
+c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.csproj.GenerateResource.cache
+c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.csproj.CoreCompileInputs.cache
+c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.exe
+c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.pdb
+c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Login.resources
