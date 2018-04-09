@@ -8,3 +8,7 @@ c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.csproj.Cor
 c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.exe
 c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.pdb
 c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Login.resources
+c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\MySql.Data.dll
+c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\MySql.Data.Entity.dll
+c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\MySql.Web.dll
+c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.csproj.CopyComplete

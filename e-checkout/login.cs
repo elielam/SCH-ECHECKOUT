@@ -17,24 +17,25 @@ namespace e_checkout
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
+            Bdd bdd = new Bdd();
 
-        }
+            string anonLogin = textBoxUsername.Text;
+            string anonPassword = textBoxPassword.Text;
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+            /* User user = new User();
+            user.SetId(1);
+            user.SetNom("test");
+            user.SetPrenom("test");
+            user.SetLogin(anonLogin);
+            user.SetPassword(anonPassword);
+            user.SetIsAdmin(false);*/
 
-        }
+            labelUsername.Text = anonLogin;
+            labelPassword.Text = anonPassword;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            User user = new User();
-            user.SetNom("Elie");
-            user.SetPrenom("Laloum");
-            user.SetLogin("kuni");
-            user.SetPassword("1234");
-            user.SetIsAdmin(true);
+            labelPOS.Text = bdd.Login(anonLogin, anonPassword).ToString();
         }
     }
 }

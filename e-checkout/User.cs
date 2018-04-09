@@ -25,6 +25,16 @@ namespace e_checkout
              this._isAdmin = isAdmin;
          } */
 
+        public void SetId(int newId)
+        {
+            this._idUser = newId;
+        }
+
+        public int GetId()
+        {
+            return this._idUser;
+        }
+
         public void SetNom(string newNom)
         {
             this._nomUser = newNom;
