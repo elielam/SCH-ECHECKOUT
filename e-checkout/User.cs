@@ -8,67 +8,67 @@ namespace e_checkout
 {
     class User
     {
-        public int _idUser;
-        public string _nomUser;
-        public string _prenomUser;
-        public string _login;
-        public string _password;
-        public bool _isAdmin;
+        private int _idUser;
+        private string _nomUser;
+        private string _prenomUser;
+        private string _login;
+        private string _password;
+        private bool _isAdmin;
 
-       /* public User(int idUser, string nomUser, string prenomUser, string login, string password, bool isAdmin)
-        {
-            _idUser = idUser;
-            _nomUser = nomUser;
-            _prenomUser = prenomUser;
-            _login = login;
-            _password = password;
-            _isAdmin = isAdmin;
-        } */
+        /* public User(int idUser, string nomUser, string prenomUser, string login, string password, bool isAdmin)
+         {
+             this._idUser = idUser;
+             this._nomUser = nomUser;
+             this._prenomUser = prenomUser;
+             this._login = login;
+             this._password = password;
+             this._isAdmin = isAdmin;
+         } */
 
         public void SetNom(string newNom)
         {
-            _nomUser = newNom;
+            this._nomUser = newNom;
         }
 
         public string GetNom()
         {
-            return _nomUser;
+            return this._nomUser;
         }
 
         public void SetPrenom(string newPrenom)
         {
-            _prenomUser = newPrenom;
+            this._prenomUser = newPrenom;
         }
 
         public string GetPrenom() {
-            return _prenomUser;
+            return this._prenomUser;
         }
 
         public void SetLogin(string newLogin)
         {
-            _login = newLogin;
+            this._login = newLogin;
         }
 
         public string GetLogin() {
-            return _login;
+            return this._login;
         }
 
         public void SetPassword(string newPassword)
         {
-            _password = newPassword;
+            this._password = newPassword;
         }
 
         public string GetPassword() {
-            return _password;
+            return this._password;
         }
 
         public void SetIsAdmin(bool newIsAdmin)
         {
-            _isAdmin = newIsAdmin;
+            this._isAdmin = newIsAdmin;
         }
 
         public bool GetIsAdmin() {
-            return _isAdmin;
+            return this._isAdmin;
         }
     }
 }
