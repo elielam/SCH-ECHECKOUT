@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace e_checkout
 {
-    public partial class PageStock : Form
+    public partial class PagePayment : Form
     {
-        public PageStock()
+        public PagePayment()
         {
             InitializeComponent();
         }
@@ -23,6 +23,14 @@ namespace e_checkout
             var home = new Home();
             home.Closed += (s, args) => this.Close();
             home.Show();
+        }
+
+        private void PagePayment_Load(object sender, EventArgs e)
+        {
+            Bdd bdd = new Bdd();
+            DataSet stockReq = bdd.SelectAllPayment();
+
+            dataGridViewPayment.DataSource = stockReq.Tables[0];
         }
     }
 }

@@ -46,9 +46,9 @@ namespace e_checkout
         private void buttonHistorique_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var pageCommande = new PageCommande();
-            pageCommande.Closed += (s, args) => this.Close();
-            pageCommande.Show();
+            var pagePayment = new PagePayment();
+            pagePayment.Closed += (s, args) => this.Close();
+            pagePayment.Show();
         }
     }
 }

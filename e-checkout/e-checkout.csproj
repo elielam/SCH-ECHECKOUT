@@ -54,53 +54,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bdd.cs" />
-    <Compile Include="PageCommand.cs">
+    <Compile Include="Classes\Bdd.cs" />
+    <Compile Include="Classes\Cart.cs" />
+    <Compile Include="Classes\CartStore.cs" />
+    <Compile Include="Classes\Category.cs" />
+    <Compile Include="Classes\Payment.cs" />
+    <Compile Include="Classes\Product.cs" />
+    <Compile Include="Classes\Stock.cs" />
+    <Compile Include="Template\PagePayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PageCommand.Designer.cs">
-      <DependentUpon>PageCommand.cs</DependentUpon>
+    <Compile Include="Template\PagePayment.Designer.cs">
+      <DependentUpon>PagePayment.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageStock.cs">
+    <Compile Include="Template\PageStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PageStock.Designer.cs">
+    <Compile Include="Template\PageStock.Designer.cs">
       <DependentUpon>PageStock.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageUser.cs">
+    <Compile Include="Template\PageUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PageUser.Designer.cs">
+    <Compile Include="Template\PageUser.Designer.cs">
       <DependentUpon>PageUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
-    <Compile Include="Login.cs">
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Template\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Template\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="Template\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="Template\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="Template\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Template\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PageCommand.resx">
-      <DependentUpon>PageCommand.cs</DependentUpon>
+    <EmbeddedResource Include="Template\PagePayment.resx">
+      <DependentUpon>PagePayment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PageStock.resx">
+    <EmbeddedResource Include="Template\PageStock.resx">
       <DependentUpon>PageStock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PageUser.resx">
+    <EmbeddedResource Include="Template\PageUser.resx">
       <DependentUpon>PageUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

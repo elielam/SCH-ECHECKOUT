@@ -24,5 +24,13 @@ namespace e_checkout
             home.Closed += (s, args) => this.Close();
             home.Show();
         }
+
+        private void pageUser_Load(object sender, EventArgs e)
+        {
+            Bdd bdd = new Bdd();
+            DataSet userReq = bdd.SelectAllUser();
+
+            dataGridViewUser.DataSource = userReq.Tables[0];
+        }
     }
 }

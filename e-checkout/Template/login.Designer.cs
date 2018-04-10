@@ -39,34 +39,30 @@
             // labelFlashMessage
             // 
             this.labelFlashMessage.AutoSize = true;
-            this.labelFlashMessage.Location = new System.Drawing.Point(246, 9);
-            this.labelFlashMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFlashMessage.Location = new System.Drawing.Point(184, 7);
             this.labelFlashMessage.Name = "labelFlashMessage";
-            this.labelFlashMessage.Size = new System.Drawing.Size(0, 17);
+            this.labelFlashMessage.Size = new System.Drawing.Size(0, 13);
             this.labelFlashMessage.TabIndex = 1;
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(13, 47);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUsername.Location = new System.Drawing.Point(10, 38);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(540, 22);
+            this.textBoxUsername.Size = new System.Drawing.Size(406, 20);
             this.textBoxUsername.TabIndex = 2;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(13, 109);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPassword.Location = new System.Drawing.Point(10, 89);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(540, 22);
+            this.textBoxPassword.Size = new System.Drawing.Size(406, 20);
             this.textBoxPassword.TabIndex = 3;
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(13, 177);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLogin.Location = new System.Drawing.Point(10, 144);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(541, 28);
+            this.buttonLogin.Size = new System.Drawing.Size(406, 23);
             this.buttonLogin.TabIndex = 4;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
@@ -75,37 +71,34 @@
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Location = new System.Drawing.Point(9, 24);
-            this.labelUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUsername.Location = new System.Drawing.Point(7, 20);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(73, 17);
+            this.labelUsername.Size = new System.Drawing.Size(55, 13);
             this.labelUsername.TabIndex = 5;
             this.labelUsername.Text = "Username";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(10, 90);
-            this.labelPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPassword.Location = new System.Drawing.Point(8, 73);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(69, 17);
+            this.labelPassword.Size = new System.Drawing.Size(53, 13);
             this.labelPassword.TabIndex = 6;
             this.labelPassword.Text = "Password";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 222);
+            this.ClientSize = new System.Drawing.Size(427, 180);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.labelFlashMessage);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "E-Checkout | Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
