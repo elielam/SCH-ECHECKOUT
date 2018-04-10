@@ -16,5 +16,34 @@ namespace e_checkout
         {
             InitializeComponent();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonStock_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var pageStock = new PageStock();
+            pageStock.Closed += (s, args) => this.Close();
+            pageStock.Show();
+        }
+
+        private void buttonUser_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var pageUser = new pageUser();
+            pageUser.Closed += (s, args) => this.Close();
+            pageUser.Show();
+        }
+
+        private void buttonHistorique_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var pageCommande = new PageCommande();
+            pageCommande.Closed += (s, args) => this.Close();
+            pageCommande.Show();
+        }
     }
 }

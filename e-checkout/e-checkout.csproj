@@ -55,6 +55,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bdd.cs" />
+    <Compile Include="PageCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommand.Designer.cs">
+      <DependentUpon>PageCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageStock.Designer.cs">
+      <DependentUpon>PageStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageUser.Designer.cs">
+      <DependentUpon>PageUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -70,8 +88,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCommand.resx">
+      <DependentUpon>PageCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageStock.resx">
+      <DependentUpon>PageStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageUser.resx">
+      <DependentUpon>PageUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

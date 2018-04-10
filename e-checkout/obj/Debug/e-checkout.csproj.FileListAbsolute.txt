@@ -23,3 +23,7 @@ C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.csp
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.csproj.CopyComplete
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.exe
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.pdb
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Home.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.PageCommande.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.PageStock.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.pageUser.resources
