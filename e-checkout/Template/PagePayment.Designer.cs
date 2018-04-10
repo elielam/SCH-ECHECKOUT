@@ -42,7 +42,7 @@
             // buttonHome
             // 
             this.buttonHome.Location = new System.Drawing.Point(9, 10);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(2);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Size = new System.Drawing.Size(40, 28);
             this.buttonHome.TabIndex = 1;
@@ -93,6 +93,7 @@
             this.buttonAdd.TabIndex = 1;
             this.buttonAdd.Text = "ADD";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDelete
             // 
@@ -114,7 +115,7 @@
             this.dataGridViewPayment.Size = new System.Drawing.Size(581, 309);
             this.dataGridViewPayment.TabIndex = 5;
             // 
-            // PageCommande
+            // PagePayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,8 +124,8 @@
             this.Controls.Add(this.groupBoxCommand);
             this.Controls.Add(this.dataGridViewPayment);
             this.Controls.Add(this.buttonHome);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "PageCommande";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "PagePayment";
             this.Text = "Historique des commandes";
             this.Load += new System.EventHandler(this.PagePayment_Load);
             this.groupBoxCommand.ResumeLayout(false);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using e_checkout.Template;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,12 @@ namespace e_checkout
             DataSet stockReq = bdd.SelectAllStock();
 
             dataGridViewStock.DataSource = stockReq.Tables[0];
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            AddModal addModal = new AddModal("Add Stock");
+            addModal.Show();
         }
     }
 }

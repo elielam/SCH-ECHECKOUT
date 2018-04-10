@@ -31,3 +31,4 @@ C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Home.resou
 C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.PageStock.resources
 C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.pageUser.resources
 C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.PagePayment.resources
+C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Template.AddModal.resources

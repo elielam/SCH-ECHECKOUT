@@ -61,6 +61,12 @@
     <Compile Include="Classes\Payment.cs" />
     <Compile Include="Classes\Product.cs" />
     <Compile Include="Classes\Stock.cs" />
+    <Compile Include="Template\AddModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\AddModal.Designer.cs">
+      <DependentUpon>AddModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Template\PagePayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     </Compile>
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Template\AddModal.resx">
+      <DependentUpon>AddModal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Template\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>

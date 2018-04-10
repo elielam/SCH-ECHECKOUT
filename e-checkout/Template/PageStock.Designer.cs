@@ -42,7 +42,7 @@
             // buttonHome
             // 
             this.buttonHome.Location = new System.Drawing.Point(9, 10);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(2);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Size = new System.Drawing.Size(40, 28);
             this.buttonHome.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             this.dataGridViewStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewStock.Location = new System.Drawing.Point(10, 43);
-            this.dataGridViewStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewStock.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewStock.Name = "dataGridViewStock";
             this.dataGridViewStock.RowTemplate.Height = 24;
             this.dataGridViewStock.Size = new System.Drawing.Size(581, 309);
@@ -66,9 +66,9 @@
             this.groupBoxCommand.Controls.Add(this.buttonAdd);
             this.groupBoxCommand.Controls.Add(this.buttonDelete);
             this.groupBoxCommand.Location = new System.Drawing.Point(10, 358);
-            this.groupBoxCommand.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxCommand.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxCommand.Name = "groupBoxCommand";
-            this.groupBoxCommand.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxCommand.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxCommand.Size = new System.Drawing.Size(581, 51);
             this.groupBoxCommand.TabIndex = 3;
             this.groupBoxCommand.TabStop = false;
@@ -77,7 +77,7 @@
             // buttonUpdate
             // 
             this.buttonUpdate.Location = new System.Drawing.Point(206, 10);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(121, 38);
             this.buttonUpdate.TabIndex = 2;
@@ -87,17 +87,18 @@
             // buttonAdd
             // 
             this.buttonAdd.Location = new System.Drawing.Point(331, 9);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(121, 38);
             this.buttonAdd.TabIndex = 1;
             this.buttonAdd.Text = "ADD";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDelete
             // 
             this.buttonDelete.Location = new System.Drawing.Point(456, 9);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(121, 38);
             this.buttonDelete.TabIndex = 0;
@@ -123,7 +124,7 @@
             this.Controls.Add(this.groupBoxCommand);
             this.Controls.Add(this.dataGridViewStock);
             this.Controls.Add(this.buttonHome);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PageStock";
             this.Text = "Gestion du stock";
             this.Load += new System.EventHandler(this.PageStock_Load);
