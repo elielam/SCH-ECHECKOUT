@@ -8,6 +8,9 @@ namespace e_checkout
 {
     static class Program
     {
+
+        public static User LoggedUser;
+
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>

@@ -89,5 +89,31 @@ namespace e_checkout
                 return false;
             }
         }
+
+        public DataSet GetUserById(string login)
+        {
+            try
+            {
+                this.connection.Open();
+                
+                MySqlCommand cmd = this.connection.CreateCommand();
+                
+                cmd.CommandText = "SELECT * FROM user WHERE login = @login";
+                cmd.Parameters.AddWithValue("@login", login);
+
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+                
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+
+                this.connection.Close();
+                return ds;
+            }
+            catch (SqlException e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
     }
 }

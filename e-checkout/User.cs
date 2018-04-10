@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace e_checkout
 {
-    class User
+    public class User
     {
         private int _idUser;
         private string _nomUser;
@@ -14,16 +14,6 @@ namespace e_checkout
         private string _login;
         private string _password;
         private bool _isAdmin;
-
-        /* public User(int idUser, string nomUser, string prenomUser, string login, string password, bool isAdmin)
-         {
-             this._idUser = idUser;
-             this._nomUser = nomUser;
-             this._prenomUser = prenomUser;
-             this._login = login;
-             this._password = password;
-             this._isAdmin = isAdmin;
-         } */
 
         public void SetId(int newId)
         {

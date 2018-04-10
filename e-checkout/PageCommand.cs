@@ -16,5 +16,13 @@ namespace e_checkout
         {
             InitializeComponent();
         }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var home = new Home();
+            home.Closed += (s, args) => this.Close();
+            home.Show();
+        }
     }
 }

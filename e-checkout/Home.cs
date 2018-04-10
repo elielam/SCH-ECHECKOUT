@@ -12,6 +12,7 @@ namespace e_checkout
 {
     public partial class Home : Form
     {
+
         public Home()
         {
             InitializeComponent();
@@ -19,7 +20,11 @@ namespace e_checkout
 
         private void Home_Load(object sender, EventArgs e)
         {
-            
+            if(!Program.LoggedUser.GetIsAdmin())
+            {
+                buttonStock.Enabled = false;
+                buttonUser.Enabled = false;
+            }
         }
 
         private void buttonStock_Click(object sender, EventArgs e)

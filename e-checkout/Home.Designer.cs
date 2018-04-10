@@ -77,7 +77,6 @@
             // buttonStock
             // 
             this.buttonStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonStock.Enabled = false;
             this.buttonStock.Location = new System.Drawing.Point(3, 3);
             this.buttonStock.Name = "buttonStock";
             this.buttonStock.Size = new System.Drawing.Size(394, 218);
