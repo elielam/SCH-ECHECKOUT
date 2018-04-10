@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,7 @@ namespace e_checkout
             this.connection = new MySqlConnection(connectionString);
         }
 
-        public bool Login(string anonUsername, string anonPassword)
+        public DataSet Login(string anonUsername, string anonPassword)
         {
             try
             {
@@ -34,27 +35,28 @@ namespace e_checkout
                 MySqlCommand cmd = this.connection.CreateCommand();
 
                 // Requête SQL
-                cmd.CommandText = "SELECT * FROM USER WHERE login = @anonLogin AND password = @anonPassword";
+                cmd.CommandText = "SELECT COUNT(*) FROM USER WHERE login = @anonLogin AND password = @anonPassword";
 
                 // utilisation de l'objet contact passé en paramètre
                 cmd.Parameters.AddWithValue("@anonLogin", anonUsername);
                 cmd.Parameters.AddWithValue("@anonPassword", anonPassword);
 
                 // Exécution de la commande SQL
-                cmd.ExecuteNonQuery();
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+
+                // fetch data
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
 
                 // Fermeture de la connexion
                 this.connection.Close();
 
-                return true;
+                return ds;
             }
             catch (SqlException e)
             {
-                // Gestion des erreurs :
-                // Possibilité de créer un Logger pour les exceptions SQL reçus
-                // Possibilité de créer une méthode avec un booléan en retour pour savoir si le contact à été ajouté correctement.
                 Console.Write(e);
-                return false;
+                return null;
             }
         }
 

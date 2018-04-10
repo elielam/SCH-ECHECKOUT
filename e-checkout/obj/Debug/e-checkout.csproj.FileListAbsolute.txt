@@ -12,3 +12,14 @@ c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\MySql.Data.dll
 c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\MySql.Data.Entity.dll
 c:\users\elie\source\repos\e-checkout\e-checkout\bin\Debug\MySql.Web.dll
 c:\users\elie\source\repos\e-checkout\e-checkout\obj\Debug\e-checkout.csproj.CopyComplete
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\bin\Debug\e-checkout.exe.config
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\bin\Debug\e-checkout.exe
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\bin\Debug\e-checkout.pdb
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.csprojResolveAssemblyReference.cache
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Login.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Properties.Resources.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.csproj.GenerateResource.cache
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.csproj.CoreCompileInputs.cache
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.csproj.CopyComplete
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.exe
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.pdb

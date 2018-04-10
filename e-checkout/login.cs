@@ -24,18 +24,20 @@ namespace e_checkout
             string anonLogin = textBoxUsername.Text;
             string anonPassword = textBoxPassword.Text;
 
-            /* User user = new User();
-            user.SetId(1);
-            user.SetNom("test");
-            user.SetPrenom("test");
-            user.SetLogin(anonLogin);
-            user.SetPassword(anonPassword);
-            user.SetIsAdmin(false);*/
+            DataSet resRequest = bdd.Login(anonLogin, anonPassword);
 
-            labelUsername.Text = anonLogin;
-            labelPassword.Text = anonPassword;
-
-            labelPOS.Text = bdd.Login(anonLogin, anonPassword).ToString();
+            if (resRequest.Tables[0].Rows[0][0].ToString() == "1")
+            {
+                labelFlashMessage.Text = "Connected";
+                // dataGridView1.DataSource = resRequest.Tables[0];
+                this.Hide();
+                var home = new Home();
+                home.Closed += (s, args) => this.Close();
+                home.Show();
+            } else
+            {;
+                MessageBox.Show("Login Error");
+            }
         }
     }
 }
