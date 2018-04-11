@@ -112,8 +112,8 @@ INSERT INTO cart_store (idCart, idProduct) VALUES ( 5 , 7);
 
 /* PAYMENT */
 
-INSERT INTO payment (idCart) VALUES (1);
-INSERT INTO payment (idCart) VALUES (2);
-INSERT INTO payment (idCart) VALUES (3);
-INSERT INTO payment (idCart) VALUES (4);
-INSERT INTO payment (idCart) VALUES (5);
+INSERT INTO payment (idCart, methodPayment, clientName, clientLastname, clientAdress, clientCity, clientCp) VALUES (1, "Mastercard", "Nicolas", "Jsaispas", "21 avenue de verdun", "domont", "95290");
+INSERT INTO payment (idCart, methodPayment, clientName, clientLastname, clientAdress, clientCity, clientCp) VALUES (2, "Chèques", "Jean", "oai", "17 allée des cerises", "Paris", "75012");
+INSERT INTO payment (idCart, methodPayment, clientName, clientLastname, clientAdress, clientCity, clientCp) VALUES (3, "Visa", "Jmen", "vrai", "2 rue des pates frr", "Bordeau", "42154");
+INSERT INTO payment (idCart, methodPayment, clientName, clientLastname, clientAdress, clientCity, clientCp) VALUES (4, "Paypal", "Balecouille", "ptetre", "42 rue des peuplier", "Paris", "75012");
+INSERT INTO payment (idCart, methodPayment, clientName, clientLastname, clientAdress, clientCity, clientCp) VALUES (5, "American Express", "1peu", "non", "75bis avenue des marchands", "Paris", "75006");

@@ -35,8 +35,17 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.dataGridViewPayment = new System.Windows.Forms.DataGridView();
+            this.labelVendor = new System.Windows.Forms.Label();
+            this.labelItemsNumber = new System.Windows.Forms.Label();
+            this.labelTotalPrice = new System.Windows.Forms.Label();
+            this.dataGridViewProducts = new System.Windows.Forms.DataGridView();
+            this.labelPaymentMethod = new System.Windows.Forms.Label();
+            this.labelClientName = new System.Windows.Forms.Label();
+            this.labelClientAdress = new System.Windows.Forms.Label();
+            this.labelClientCity = new System.Windows.Forms.Label();
             this.groupBoxCommand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPayment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonHome
@@ -109,18 +118,99 @@
             // dataGridViewPayment
             // 
             this.dataGridViewPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPayment.Location = new System.Drawing.Point(10, 41);
+            this.dataGridViewPayment.Location = new System.Drawing.Point(10, 52);
             this.dataGridViewPayment.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewPayment.Name = "dataGridViewPayment";
             this.dataGridViewPayment.RowTemplate.Height = 24;
-            this.dataGridViewPayment.Size = new System.Drawing.Size(581, 309);
+            this.dataGridViewPayment.Size = new System.Drawing.Size(233, 102);
             this.dataGridViewPayment.TabIndex = 5;
+            // 
+            // labelVendor
+            // 
+            this.labelVendor.Location = new System.Drawing.Point(487, 44);
+            this.labelVendor.Name = "labelVendor";
+            this.labelVendor.Size = new System.Drawing.Size(100, 23);
+            this.labelVendor.TabIndex = 8;
+            this.labelVendor.Text = "Vendors";
+            this.labelVendor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelItemsNumber
+            // 
+            this.labelItemsNumber.Location = new System.Drawing.Point(487, 67);
+            this.labelItemsNumber.Name = "labelItemsNumber";
+            this.labelItemsNumber.Size = new System.Drawing.Size(100, 23);
+            this.labelItemsNumber.TabIndex = 9;
+            this.labelItemsNumber.Text = "Nbr Items";
+            this.labelItemsNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelTotalPrice
+            // 
+            this.labelTotalPrice.Location = new System.Drawing.Point(487, 90);
+            this.labelTotalPrice.Name = "labelTotalPrice";
+            this.labelTotalPrice.Size = new System.Drawing.Size(100, 23);
+            this.labelTotalPrice.TabIndex = 10;
+            this.labelTotalPrice.Text = "Total €";
+            this.labelTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dataGridViewProducts
+            // 
+            this.dataGridViewProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProducts.Location = new System.Drawing.Point(11, 168);
+            this.dataGridViewProducts.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewProducts.Name = "dataGridViewProducts";
+            this.dataGridViewProducts.RowTemplate.Height = 24;
+            this.dataGridViewProducts.Size = new System.Drawing.Size(576, 159);
+            this.dataGridViewProducts.TabIndex = 11;
+            // 
+            // labelPaymentMethod
+            // 
+            this.labelPaymentMethod.Location = new System.Drawing.Point(248, 81);
+            this.labelPaymentMethod.Name = "labelPaymentMethod";
+            this.labelPaymentMethod.Size = new System.Drawing.Size(100, 23);
+            this.labelPaymentMethod.TabIndex = 14;
+            this.labelPaymentMethod.Text = "Payment Method";
+            this.labelPaymentMethod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelClientName
+            // 
+            this.labelClientName.Location = new System.Drawing.Point(248, 58);
+            this.labelClientName.Name = "labelClientName";
+            this.labelClientName.Size = new System.Drawing.Size(100, 23);
+            this.labelClientName.TabIndex = 12;
+            this.labelClientName.Text = "Name Client";
+            this.labelClientName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelClientAdress
+            // 
+            this.labelClientAdress.Location = new System.Drawing.Point(248, 104);
+            this.labelClientAdress.Name = "labelClientAdress";
+            this.labelClientAdress.Size = new System.Drawing.Size(100, 23);
+            this.labelClientAdress.TabIndex = 15;
+            this.labelClientAdress.Text = "Adress Client";
+            this.labelClientAdress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelClientCity
+            // 
+            this.labelClientCity.Location = new System.Drawing.Point(248, 126);
+            this.labelClientCity.Name = "labelClientCity";
+            this.labelClientCity.Size = new System.Drawing.Size(100, 23);
+            this.labelClientCity.TabIndex = 16;
+            this.labelClientCity.Text = "City Client";
+            this.labelClientCity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PagePayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 414);
+            this.Controls.Add(this.labelClientCity);
+            this.Controls.Add(this.labelClientAdress);
+            this.Controls.Add(this.labelPaymentMethod);
+            this.Controls.Add(this.labelClientName);
+            this.Controls.Add(this.dataGridViewProducts);
+            this.Controls.Add(this.labelTotalPrice);
+            this.Controls.Add(this.labelItemsNumber);
+            this.Controls.Add(this.labelVendor);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.groupBoxCommand);
             this.Controls.Add(this.dataGridViewPayment);
@@ -131,6 +221,7 @@
             this.Load += new System.EventHandler(this.PagePayment_Load);
             this.groupBoxCommand.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPayment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -144,5 +235,13 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.DataGridView dataGridViewPayment;
+        private System.Windows.Forms.Label labelVendor;
+        private System.Windows.Forms.Label labelItemsNumber;
+        private System.Windows.Forms.Label labelTotalPrice;
+        private System.Windows.Forms.DataGridView dataGridViewProducts;
+        private System.Windows.Forms.Label labelPaymentMethod;
+        private System.Windows.Forms.Label labelClientName;
+        private System.Windows.Forms.Label labelClientAdress;
+        private System.Windows.Forms.Label labelClientCity;
     }
 }

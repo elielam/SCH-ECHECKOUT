@@ -750,6 +750,32 @@ namespace e_checkout
             }
         }
 
+        public DataSet GetAllCartProducts(int id)
+        {
+            try
+            {
+                this.connection.Open();
+
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "SELECT * FROM cart_store WHERE idCart = @id";
+                cmd.Parameters.AddWithValue("@id", id);
+
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+
+                this.connection.Close();
+                return ds;
+            }
+            catch (SqlException e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
+
         // Basics SET methods
 
         public bool AddCardStore(CartStore cardStore)

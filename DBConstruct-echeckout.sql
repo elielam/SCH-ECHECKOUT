@@ -70,8 +70,14 @@ CREATE TABLE cart(
 #------------------------------------------------------------
 
 CREATE TABLE payment(
-        id     int (11) Auto_increment  NOT NULL ,
-        idCart Int NOT NULL ,
+        id             int (11) Auto_increment  NOT NULL ,
+        idCart         Int NOT NULL ,
+        methodPayment  Varchar (25) NOT NULL ,
+        clientName     Varchar (25) NOT NULL ,
+        clientLastname Varchar (25) NOT NULL ,
+        clientAdress   Varchar (100) NOT NULL ,
+        clientCity     Varchar (25) NOT NULL ,
+        clientCp       Varchar (25) NOT NULL ,
         PRIMARY KEY (id )
 )ENGINE=InnoDB;
 
