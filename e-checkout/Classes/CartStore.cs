@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,6 +41,13 @@ namespace e_checkout.Classes
         public int GetIdProduct()
         {
             return this._idProduct;
+        }
+
+        public void Init(DataSet ds)
+        {
+            this.SetId(Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()));
+            this.SetIdCart(Convert.ToInt32(ds.Tables[0].Rows[0][1].ToString()));
+            this.SetIdProduct(Convert.ToInt32(ds.Tables[0].Rows[0][2].ToString()));
         }
     }
 }

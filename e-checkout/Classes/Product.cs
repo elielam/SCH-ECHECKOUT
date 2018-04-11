@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,14 @@ namespace e_checkout.Classes
         public float GetPrice()
         {
             return this._price;
+        }
+
+        public void Init(DataSet ds)
+        {
+            this.SetId(Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()));
+            this.SetIdCategory(Convert.ToInt32(ds.Tables[0].Rows[0][1].ToString()));
+            this.SetLibelle(ds.Tables[0].Rows[0][2].ToString());
+            this.SetPrice(Convert.ToSingle(ds.Tables[0].Rows[0][3].ToString()));
         }
     }
 }

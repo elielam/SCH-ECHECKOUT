@@ -251,9 +251,35 @@ namespace e_checkout
             }
         }
 
+        public DataSet GetProductById(int id)
+        {
+            try
+            {
+                this.connection.Open();
+
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "SELECT * FROM product WHERE id = @id";
+                cmd.Parameters.AddWithValue("@id", id);
+
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+
+                this.connection.Close();
+                return ds;
+            }
+            catch (SqlException e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
+
         // Basics SET methods
 
-        public bool AddProduct(Category category)
+        public bool AddProduct(Product product)
         {
             try
             {
@@ -272,7 +298,7 @@ namespace e_checkout
 
         // Update
 
-        public bool UpdateProduct(Category category)
+        public bool UpdateProduct(Product product)
         {
             try
             {
@@ -291,7 +317,7 @@ namespace e_checkout
 
         // Delete
 
-        public bool DeleteProduct(Category category)
+        public bool DeleteProduct(Product product)
         {
             try
             {
@@ -322,6 +348,32 @@ namespace e_checkout
                 MySqlCommand cmd = this.connection.CreateCommand();
 
                 cmd.CommandText = "SELECT * FROM category";
+
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+
+                this.connection.Close();
+                return ds;
+            }
+            catch (SqlException e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
+
+        public DataSet GetCategoryById(int id)
+        {
+            try
+            {
+                this.connection.Open();
+
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "SELECT * FROM category WHERE id = @id";
+                cmd.Parameters.AddWithValue("@id", id);
 
                 MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
 
@@ -409,6 +461,32 @@ namespace e_checkout
                 MySqlCommand cmd = this.connection.CreateCommand();
 
                 cmd.CommandText = "SELECT * FROM stock";
+
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+
+                this.connection.Close();
+                return ds;
+            }
+            catch (SqlException e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
+
+        public DataSet GetStockById(int id)
+        {
+            try
+            {
+                this.connection.Open();
+
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "SELECT * FROM stock WHERE id = @id";
+                cmd.Parameters.AddWithValue("@id", id);
 
                 MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
 
@@ -533,6 +611,32 @@ namespace e_checkout
             }
         }
 
+        public DataSet GetCartById(int id)
+        {
+            try
+            {
+                this.connection.Open();
+
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "SELECT * FROM cart WHERE id = @id";
+                cmd.Parameters.AddWithValue("@id", id);
+
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+
+                this.connection.Close();
+                return ds;
+            }
+            catch (SqlException e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
+
         // Basics SET methods
 
         public bool AddCart(Cart cart)
@@ -620,6 +724,32 @@ namespace e_checkout
             }
         }
 
+        public DataSet GetCartStoreById(int id)
+        {
+            try
+            {
+                this.connection.Open();
+
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "SELECT * FROM cart_store WHERE id = @id";
+                cmd.Parameters.AddWithValue("@id", id);
+
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+
+                this.connection.Close();
+                return ds;
+            }
+            catch (SqlException e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
+
         // Basics SET methods
 
         public bool AddCardStore(CartStore cardStore)
@@ -690,6 +820,32 @@ namespace e_checkout
                 MySqlCommand cmd = this.connection.CreateCommand();
 
                 cmd.CommandText = "SELECT * FROM payment";
+
+                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adap.Fill(ds);
+
+                this.connection.Close();
+                return ds;
+            }
+            catch (SqlException e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
+
+        public DataSet GetPaymentById(int id)
+        {
+            try
+            {
+                this.connection.Open();
+
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "SELECT * FROM payment WHERE id = @id";
+                cmd.Parameters.AddWithValue("@id", id);
 
                 MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
 

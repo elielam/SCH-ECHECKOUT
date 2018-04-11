@@ -59,6 +59,7 @@
             this.dataGridViewStock.RowTemplate.Height = 24;
             this.dataGridViewStock.Size = new System.Drawing.Size(581, 309);
             this.dataGridViewStock.TabIndex = 2;
+            this.dataGridViewStock.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStock_CellClick);
             // 
             // groupBoxCommand
             // 
@@ -83,6 +84,7 @@
             this.buttonUpdate.TabIndex = 2;
             this.buttonUpdate.Text = "UPDATE";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonAdd
             // 
@@ -104,6 +106,7 @@
             this.buttonDelete.TabIndex = 0;
             this.buttonDelete.Text = "DELETE";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // labelTitle
             // 

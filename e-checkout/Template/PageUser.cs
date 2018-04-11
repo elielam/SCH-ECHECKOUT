@@ -13,6 +13,9 @@ namespace e_checkout
 {
     public partial class pageUser : Form
     {
+        private string _classes = "user";
+        private int _selectedId = 2;
+
         public pageUser()
         {
             InitializeComponent();
@@ -38,6 +41,12 @@ namespace e_checkout
         {
             AddModal addModal = new AddModal("Add User");
             addModal.Show();
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            UpdateModal updateModal = new UpdateModal(this._classes, this._selectedId);
+            updateModal.Show();
         }
     }
 }

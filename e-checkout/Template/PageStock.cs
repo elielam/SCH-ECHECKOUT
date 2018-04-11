@@ -13,6 +13,10 @@ namespace e_checkout
 {
     public partial class PageStock : Form
     {
+
+        private string _classes = "stock";
+        private int _selectedId = 5;
+
         public PageStock()
         {
             InitializeComponent();
@@ -38,6 +42,22 @@ namespace e_checkout
         {
             AddModal addModal = new AddModal("Add Stock");
             addModal.Show();
+        }
+
+        private void dataGridViewStock_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+     
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            UpdateModal updateModal = new UpdateModal(this._classes, this._selectedId);
+            updateModal.Show();
         }
     }
 }

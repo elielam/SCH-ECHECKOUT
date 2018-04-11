@@ -45,7 +45,9 @@ namespace e_checkout.Classes
 
         public void Init(DataSet ds)
         {
-
+            this.SetId(Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()));
+            this.SetIdProduct(Convert.ToInt32(ds.Tables[0].Rows[0][1].ToString()));
+            this.SetQuantity(Convert.ToDouble(ds.Tables[0].Rows[0][2].ToString()));
         }
     }
 }
