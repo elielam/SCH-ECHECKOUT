@@ -73,6 +73,7 @@
             this.buttonCaisse.TabIndex = 2;
             this.buttonCaisse.Text = "CAISSE";
             this.buttonCaisse.UseVisualStyleBackColor = true;
+            this.buttonCaisse.Click += new System.EventHandler(this.buttonCaisse_Click);
             // 
             // buttonStock
             // 

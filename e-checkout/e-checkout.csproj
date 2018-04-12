@@ -73,6 +73,18 @@
     <Compile Include="Template\PagePayment.Designer.cs">
       <DependentUpon>PagePayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Template\PageSellProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\PageSellProduct.Designer.cs">
+      <DependentUpon>PageSellProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\PageSellFacturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\PageSellFacturation.Designer.cs">
+      <DependentUpon>PageSellFacturation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Template\PageStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,12 +112,6 @@
     </Compile>
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Template\test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Template\test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
-    </Compile>
     <Compile Include="Template\UpdateModal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     <EmbeddedResource Include="Template\PagePayment.resx">
       <DependentUpon>PagePayment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Template\PageSellProduct.resx">
+      <DependentUpon>PageSellProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Template\PageStock.resx">
       <DependentUpon>PageStock.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,9 +148,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Template\test.resx">
-      <DependentUpon>test.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Template\UpdateModal.resx">
       <DependentUpon>UpdateModal.cs</DependentUpon>
     </EmbeddedResource>

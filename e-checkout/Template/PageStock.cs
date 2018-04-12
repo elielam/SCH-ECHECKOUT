@@ -101,11 +101,5 @@ namespace e_checkout
             UpdateModal updateModal = new UpdateModal(this._classes, this._selectedId);
             updateModal.Show();
         }
-
-        private void buttonDeleteStock_Click(object sender, EventArgs e)
-        {
-            test test = new test();
-            test.Show();
-        }
     }
 }

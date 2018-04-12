@@ -168,7 +168,6 @@
             this.buttonDeleteStock.TabIndex = 3;
             this.buttonDeleteStock.Text = "DELETE";
             this.buttonDeleteStock.UseVisualStyleBackColor = true;
-            this.buttonDeleteStock.Click += new System.EventHandler(this.buttonDeleteStock_Click);
             // 
             // tabPageProduct
             // 
