@@ -35,4 +35,4 @@ C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Template.U
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Template.AddModal.resources
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.PagePayment.resources
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Template.UpdateModal.resources
-C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Template.test.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Template.PageSellProduct.resources

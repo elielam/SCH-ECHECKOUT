@@ -1,6 +1,6 @@
 ﻿namespace e_checkout.Template
 {
-    partial class test
+    partial class PageSellFacturation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // test
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "test";
-            this.Text = "test";
-            this.Load += new System.EventHandler(this.test_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "PageSellFacturation";
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

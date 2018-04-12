@@ -1,4 +1,5 @@
-﻿using System;
+﻿using e_checkout.Template;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,6 +50,14 @@ namespace e_checkout
             var pagePayment = new PagePayment();
             pagePayment.Closed += (s, args) => this.Close();
             pagePayment.Show();
+        }
+
+        private void buttonCaisse_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var pageSellProduct = new PageSellProduct();
+            pageSellProduct.Closed += (s, args) => this.Close(); ;
+            pageSellProduct.Show();
         }
     }
 }
