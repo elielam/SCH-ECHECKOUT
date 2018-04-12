@@ -40,7 +40,7 @@ namespace e_checkout
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            AddModal addModal = new AddModal("Add Stock");
+            AddModal addModal = new AddModal(this._classes);
             addModal.Show();
         }
 
