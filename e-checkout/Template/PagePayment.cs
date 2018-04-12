@@ -49,14 +49,32 @@ namespace e_checkout
 
             DataTableManager manager = new DataTableManager();
             DataSet selectedCartProductsReq = bdd.GetAllCartProducts(selectedCart.GetId());
-            foreach(DataRow cartStoreItem in selectedCartProductsReq.Tables[0].Rows)
+
+            double totalCartPrice = 0;
+            int nbrCartItems = 0;
+
+            // Data grid view products need to show selectedProducts
+            BindingSource bindingSourceProducts = new BindingSource();
+
+            List<Product> selectedProducts = new List<Product>();
+            foreach (DataRow cartStoreItem in selectedCartProductsReq.Tables[0].Rows)
             {
                 DataSet tmpProductReq = bdd.GetProductById(Convert.ToInt32(cartStoreItem[2].ToString()));
                 Product product = new Product();
                 product.Init(tmpProductReq);
+<<<<<<< HEAD
+=======
+                totalCartPrice += Convert.ToDouble(product.GetPrice());
+                nbrCartItems++;
+                selectedProducts.Add(product);
+
+                // Data grid view products need to show selectedProducts
+                bindingSourceProducts.Add(product);
+>>>>>>> ce03e4e41fade865c26767ebe70f01731f8e250e
             }
 
-            dataGridViewProducts.DataSource = selectedCartProductsReq.Tables[0];
+            // Data grid view products need to show selectedProducts
+            dataGridViewProducts.DataSource = bindingSourceProducts;
 
             labelClientName.Text = selectedPayment.GetClientName() + " " + selectedPayment.GetClientLastname();
             labelPaymentMethod.Text = selectedPayment.GetMethodPayment();
@@ -64,13 +82,15 @@ namespace e_checkout
             labelClientCity.Text = selectedPayment.GetClientCity() + " , " + selectedPayment.GetClientCp();
 
             labelVendor.Text = selectedCartVendor.GetUsername();
+            labelItemsNumber.Text = nbrCartItems.ToString() + " Items in cart"; 
+            labelTotalPrice.Text = totalCartPrice.ToString() + " €";
 
             dataGridViewPayment.DataSource = paymentReq.Tables[0];
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            AddModal addModal = new AddModal("Add Payment");
+            AddModal addModal = new AddModal(this._classes);
             addModal.Show();
         }
 

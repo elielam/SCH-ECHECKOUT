@@ -24,7 +24,6 @@ C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.csp
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.exe
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e-checkout.pdb
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Home.resources
-C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.PageCommande.resources
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.PageStock.resources
 C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.pageUser.resources
 C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Home.resources
@@ -33,3 +32,7 @@ C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.pageUser.r
 C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.PagePayment.resources
 C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Template.AddModal.resources
 C:\Users\Elie\source\repos\e-checkout\e-checkout\obj\Debug\e_checkout.Template.UpdateModal.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Template.AddModal.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.PagePayment.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Template.UpdateModal.resources
+C:\Users\eliel\source\repos\School-ECheckout\e-checkout\obj\Debug\e_checkout.Template.test.resources

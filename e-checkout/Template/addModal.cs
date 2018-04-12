@@ -1,4 +1,5 @@
-﻿using System;
+﻿using e_checkout.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,18 +13,42 @@ namespace e_checkout.Template
 {
     public partial class AddModal : Form
     {
+        private string _classes;
 
-        private string _title;
-
-        public AddModal(string title)
+        public AddModal(string classes)
         {
-            InitializeComponent();
-            this._title = title;
+            this._classes = classes;
+            
+            switch (this._classes)
+            {
+                case "stock":
+                    this.InitializeComponentStock();
+                    break;
+                case "user":
+                    this.InitializeComponentUser();
+                    break;
+                case "product":
+                    this.InitializeComponentProduct();
+                    break;
+                case "payment":
+                    this.InitializeComponentPayment();
+                    break;
+            }
         }
 
         private void AddModal_Load(object sender, EventArgs e)
         {
-            label1.Text = this._title;
+            
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonReturn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

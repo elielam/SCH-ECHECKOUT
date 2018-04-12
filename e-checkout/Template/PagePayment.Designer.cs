@@ -66,7 +66,7 @@
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(467, 28);
             this.labelTitle.TabIndex = 7;
-            this.labelTitle.Text = "GESTION DES STOCKS";
+            this.labelTitle.Text = "GESTION DES FACTURES";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBoxCommand

@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +24,6 @@ namespace e_checkout
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
         }
- 
     }
+
 }
