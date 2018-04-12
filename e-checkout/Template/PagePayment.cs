@@ -47,10 +47,13 @@ namespace e_checkout
             User selectedCartVendor = new User();
             selectedCartVendor.Init(selectedCartVendorReq);
 
+            DataTableManager manager = new DataTableManager();
             DataSet selectedCartProductsReq = bdd.GetAllCartProducts(selectedCart.GetId());
             foreach(DataRow cartStoreItem in selectedCartProductsReq.Tables[0].Rows)
             {
-                DataSet tmpProduct = bdd.GetProductById(Convert.ToInt32(cartStoreItem[2].ToString()));
+                DataSet tmpProductReq = bdd.GetProductById(Convert.ToInt32(cartStoreItem[2].ToString()));
+                Product product = new Product();
+                product.Init(tmpProductReq);
             }
 
             dataGridViewProducts.DataSource = selectedCartProductsReq.Tables[0];
