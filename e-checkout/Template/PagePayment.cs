@@ -46,8 +46,7 @@ namespace e_checkout
             DataSet selectedCartVendorReq = bdd.GetUserById(selectedCart.GetIdUser());
             User selectedCartVendor = new User();
             selectedCartVendor.Init(selectedCartVendorReq);
-
-            DataTableManager manager = new DataTableManager();
+            
             DataSet selectedCartProductsReq = bdd.GetAllCartProducts(selectedCart.GetId());
 
             double totalCartPrice = 0;
@@ -62,15 +61,12 @@ namespace e_checkout
                 DataSet tmpProductReq = bdd.GetProductById(Convert.ToInt32(cartStoreItem[2].ToString()));
                 Product product = new Product();
                 product.Init(tmpProductReq);
-<<<<<<< HEAD
-=======
                 totalCartPrice += Convert.ToDouble(product.GetPrice());
                 nbrCartItems++;
                 selectedProducts.Add(product);
 
                 // Data grid view products need to show selectedProducts
                 bindingSourceProducts.Add(product);
->>>>>>> ce03e4e41fade865c26767ebe70f01731f8e250e
             }
 
             // Data grid view products need to show selectedProducts

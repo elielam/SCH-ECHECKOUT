@@ -13,25 +13,24 @@ namespace e_checkout.Template
 {
     public partial class PageSellProduct : Form
     {
-        private List<Product> products;
+        private List<Product> _products = new List<Product>();
+        public static List<Product> _productsCart = new List<Product>();
         public PageSellProduct()
         {
             Bdd bdd = new Bdd();
             DataSet productsReq = bdd.SelectAllProduct();
-
             foreach (DataRow productRow in productsReq.Tables[0].Rows)
             {
                 DataSet dsTest = new DataSet();
-                DataTable dtTest = new DataTable();
+                DataTable dtTest = productsReq.Tables[0].Clone();
+                dtTest.ImportRow(productRow);
                 dsTest.Tables.Add(dtTest);
-                dtTest.Rows.Add(productRow.ItemArray);
                 Product product = new Product();
                 product.Init(dsTest);
-                products.Add(product);
-                Console.WriteLine(product.GetLibelle());
+                _products.Add(product);
             }
 
-            InitializeComponent(products);
+            InitializeComponent(_products);
         }
     }
 }
